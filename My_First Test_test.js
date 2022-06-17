@@ -18,7 +18,7 @@ Scenario('create user', async ({ I }) => {
 })
 
 Scenario('Run Into Wall Test', async ({ I }) => {
-  const response = await I.sendPostRequest('/cleaning-sessions', { "roomSize" : [5, 5], "coords" : [0, 0], "patches" : [ [1, 0], [2, 2], [2, 3] ], "instructions" : "NNESEESWNW" });
+  const response = await I.sendPostRequest('/cleaning-sessions', { "roomSize" : [5, 5], "coords" : [0, 0], "patches" : [ [1, 0], [2, 2], [2, 3] ], "instructions" : "NNESEESWW" });
   // usually we won't need direct access to response object for API testing 
   // but you can obtain it from request
 
