@@ -9,7 +9,7 @@ Scenario('create user', async ({ I }) => {
   // this method introduced by JSONResponse helper
   I.seeResponseCodeIsSuccessful();
   I.seeResponseContainsJson({
-    "patches": 1
+    "patches": 2
   });
   I.seeResponseContainsJson({
     "coords":[2,3]
